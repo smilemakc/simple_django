@@ -14,7 +14,9 @@ RUN apk -U upgrade && apk -U add python3 ca-certificates musl-dev gcc python3-de
     rm -r /root/.cache && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     ln -s /usr/bin/pip3 /usr/bin/pip
+
 COPY ./requirements.txt /tmp
+
 RUN pip install -r /tmp/requirements.txt
 RUN mkdir -p /code && chown -R django /code
 WORKDIR /code
