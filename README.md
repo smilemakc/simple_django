@@ -1,7 +1,8 @@
 # simple_django
 Docker image for Django project
 
-Python packages 
+**Python packages**
+
 contextlib2==0.5.5 
 decorator==4.0.11 
 Django==1.11.3 
@@ -43,9 +44,12 @@ add your requirements.txt to build context
 
 ```
    FROM smilemakc/simple_django:latest
-   RUN pip install -r requirements.txt
-docker-compose
+   RUN pip install -r requirements.txt
+```   
 
+**docker-compose**
+
+```
 services:
     django:
       image: smilemakc/simple_django:latest
