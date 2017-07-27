@@ -46,6 +46,7 @@ add your requirements.txt to build context
 ```
    FROM smilemakc/simple_django:latest
    RUN pip install -r requirements.txt
+   
 ```  
 
 
