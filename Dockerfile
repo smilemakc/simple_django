@@ -5,7 +5,7 @@ RUN addgroup -S -g 777 django && adduser -D -S -G django -u 777 django
 RUN apk -U upgrade && apk -U add python3 ca-certificates musl-dev gcc python3-dev postgresql-dev \
     gettext openjpeg openjpeg-tools openjpeg-dev libjpeg-turbo \
     libjpeg-turbo-utils libjpeg-turbo-dev musl freetype freetype-dev \
-    libwebp lcms2 tiff zlib zlib-dev \
+    libwebp lcms2 tiff zlib zlib-dev libffi-dev \
     g++ gcc libxslt-dev && \
     update-ca-certificates && \
     python3 -m ensurepip && \
